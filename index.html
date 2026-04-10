@@ -1,27 +1,232 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Sanjay Karki | System Administrator</title>
-    <link href="css/style.css" rel="stylesheet">
-    <meta name="description" content="System Administrator | Incident Manager | Technologist | Web developer | Passionate about computer programming, science and technology in their broadest spectrum ">
-  </head>
-  <body>
-    <header>
-      <h1>Sanjay Karki</h1>
-      <p>VMware/Windows System Administrator</p>
-      <nav>
-        <ul>
-          <li><a target='_blank' href="http://github.com/sanjaykarki" class="fa fa-github"></a></li>
-          <li><a target='_blank' href="https://stackoverflow.com/users/2315592/sanjay-karki?tab=profile" class="fa fa-stack-overflow"></a></li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjay Karki</title>
+<meta name="description" content="Sanjay Karki - Server Administrator at Heidelberg Materials Digital Hub, Brno. VMware, Linux, Azure, 11+ years IT.">
+<meta property="og:title" content="Sanjay Karki - Server Administrator">
+<meta property="og:description" content="Infrastructure specialist. VMware, Linux, Azure, ITIL, 11+ years in IT.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230c0c0e'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='18' font-weight='bold' fill='%23e8c97a'>SK</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="prog" id="prog"></div>
+
+<nav>
+  <a href="#" class="nlogo"><span class="nlogo-dot"></span>SK.sys</a>
+  <ul class="nlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="ncta">Get in touch</a>
+  <button class="hbg" id="hbg" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mmenu" id="mm" role="dialog" aria-modal="true">
+  <button class="mclose" id="mclose" aria-label="Close menu">&#x2715;</button>
+  <a href="#about" class="mlink">About</a>
+  <a href="#skills" class="mlink">Skills</a>
+  <a href="#experience" class="mlink">Experience</a>
+  <a href="#certifications" class="mlink">Certifications</a>
+  <a href="#contact" class="mlink">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" style="border-top:none" id="hero">
+  <div class="hero-bg">
+    <div class="hero-bg-orb orb1"></div>
+    <div class="hero-bg-orb orb2"></div>
+    <div class="hero-bg-orb orb3"></div>
+  </div>
+  <div style="position:relative;z-index:1">
+    <div class="heyebrow">Server Administrator</div>
+    <h1 class="hname">Sanjay<br><em>Karki</em></h1>
+    <p class="htagline">Infrastructure specialist at Heidelberg Materials Digital Hub &#8212; deploying VMware, Linux &amp; Azure at enterprise scale from Brno, Czechia.</p>
+    <div class="hactions">
+      <a href="#experience" class="btn1">&#8594;&nbsp; View Experience</a>
+      <a href="#contact" class="btn2">&#8594;&nbsp; Contact Me</a>
+    </div>
+    <div class="hpills">
+      <span class="hpill">VMware ESXi</span>
+      <span class="hpill">Linux / RHEL</span>
+      <span class="hpill">Microsoft Azure</span>
+      <span class="hpill">ITIL</span>
+      <span class="hpill">11+ yrs IT</span>
+    </div>
+  </div>
+  <div class="hvisual">
+    <div class="term">
+      <div class="tbar">
+        <div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div>
+        <span class="ttitle">sanjay@sysops ~ bash</span>
+      </div>
+      <div class="tbody" id="termBody"></div>
+    </div>
+  </div>
+  <div class="shint"><span>Scroll</span><div class="sarr"></div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="fu">
+    <div class="slabel">01 / About</div>
+    <h2 class="shead">The person<br>behind the uptime</h2>
+  </div>
+  <div class="agrid">
+    <div class="fu">
+      <div class="abody">
+        <p>I'm Sanjay Karki, a Server Administrator and Application Hosting Specialist at Heidelberg Materials Digital Hub in Brno, Czechia. With a career spanning IBM, Kyndryl, and beyond, I've built deep expertise in VMware ESXi, Windows Server, and Linux infrastructure &#8212; from bare-metal deployments to full cloud migrations on Microsoft Azure.</p>
+        <p>Earlier at IBM, I served as Service Coordinator and Incident Manager &#8212; leading cross-functional teams through critical incidents, championing process improvement, and building the response-readiness culture that keeps enterprise systems recoverable and resilient.</p>
+        <p>I started out as a Web Developer in Kathmandu, which gives me a full-stack perspective on every infrastructure challenge. I remain genuinely passionate about programming, science, and technology in their broadest spectrum.</p>
+      </div>
+    </div>
+    <div class="fu">
+      <div class="astats">
+        <div class="sc"><div class="snum">11+</div><div class="slbl">Years in IT</div></div>
+        <div class="sc"><div class="snum">4</div><div class="slbl">Companies</div></div>
+        <div class="sc"><div class="snum">IBM</div><div class="slbl">Alumni</div></div>
+        <div class="sc"><div class="snum">Brno</div><div class="slbl">Czechia</div></div>
+        <div class="sc" style="grid-column:span 2"><div class="snum" style="font-size:20px">Heidelberg Materials</div><div class="slbl">Current Employer</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="fu">
+    <div class="slabel">02 / Skills</div>
+    <h2 class="shead">Technical toolkit</h2>
+  </div>
+  <div class="sgrid fu">
+    <div class="sblk"><span class="sico">&#9881;&#65039;</span><div class="snm">Virtualisation</div><div class="stags"><span class="tag">VMware ESXi</span><span class="tag">vSphere</span><span class="tag">vCenter</span><span class="tag">vSAN</span><span class="tag">NSX</span><span class="tag">Hyper-V</span><span class="tag">iDRAC</span></div></div>
+    <div class="sblk"><span class="sico">&#128421;&#65039;</span><div class="snm">Windows Server</div><div class="stags"><span class="tag">Active Directory</span><span class="tag">DNS / DHCP</span><span class="tag">IIS</span><span class="tag">Group Policy</span><span class="tag">WSUS</span><span class="tag">SCCM</span></div></div>
+    <div class="sblk"><span class="sico">&#128039;</span><div class="snm">Linux / Unix</div><div class="stags"><span class="tag">RHEL</span><span class="tag">Ubuntu</span><span class="tag">CentOS</span><span class="tag">Bash Scripting</span><span class="tag">SSH</span></div></div>
+    <div class="sblk"><span class="sico">&#128190;</span><div class="snm">Storage &amp; Hardware</div><div class="stags"><span class="tag">NetApp</span><span class="tag">QNAP</span><span class="tag">NAS / SAN</span><span class="tag">RAID</span><span class="tag">Server Build</span></div></div>
+    <div class="sblk"><span class="sico">&#9729;&#65039;</span><div class="snm">Cloud &amp; Automation</div><div class="stags"><span class="tag">Microsoft Azure</span><span class="tag">Cloud Migration</span><span class="tag">PowerShell</span><span class="tag">Ansible</span><span class="tag">Terraform</span></div></div>
+    <div class="sblk"><span class="sico">&#128737;&#65039;</span><div class="snm">Security &amp; Monitoring</div><div class="stags"><span class="tag">Vulnerability Mgmt</span><span class="tag">Patch Management</span><span class="tag">Backup &amp; DR</span><span class="tag">Zabbix</span><span class="tag">SIEM</span></div></div>
+    <div class="sblk"><span class="sico">&#128293;</span><div class="snm">Incident Management</div><div class="stags"><span class="tag">ITIL Framework</span><span class="tag">RCA</span><span class="tag">SLA Management</span><span class="tag">ServiceNow</span><span class="tag">Change Mgmt</span></div></div>
+    <div class="sblk"><span class="sico">&#128187;</span><div class="snm">Web Development</div><div class="stags"><span class="tag">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span></div></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="fu">
+    <div class="slabel">03 / Experience</div>
+    <h2 class="shead">Where I've<br>built things</h2>
+  </div>
+  <div class="tline fu">
+    <div class="titem">
+      <div class="tdot"><div class="tdoti"></div></div>
+      <div>
+        <div class="tmeta"><span class="tdate">Aug 2023 &#8212; Present &nbsp;&#183;&nbsp; 2 yrs 9 mos</span><span class="tco">Heidelberg Materials Digital Hub &nbsp;&#183;&nbsp; Brno &nbsp;&#183;&nbsp; Hybrid</span></div>
+        <div class="trole">Server Administrator / Application Hosting Specialist</div>
+        <div class="tdesc">Leading hardware deployment and virtualisation initiatives &#8212; configuring VMware ESXi and NetApp/QNAP storage, building Windows Server and Linux (RHEL/Ubuntu) environments from scratch. Primary infrastructure contact: handling customer requests, managing ticket queues, driving OS optimisation, incident resolution, and change management.</div>
+        <div class="tach"><div class="tachl">Key Achievements</div><p>Orchestrated a full VMware ESXi upgrade from v7 to v8 across the datacenter and all remote sites. Led migration of on-premises workloads to Microsoft Azure, reducing infrastructure overhead and improving scalability.</p></div>
+        <div class="tskills"><span class="tag">VMware ESXi v8</span><span class="tag">NetApp / QNAP</span><span class="tag">Windows Server</span><span class="tag">RHEL / Ubuntu</span><span class="tag">Microsoft Azure</span><span class="tag">Cloud Migration</span></div>
+      </div>
+    </div>
+    <div class="titem">
+      <div class="tdot"><div class="tdoti"></div></div>
+      <div>
+        <div class="tmeta"><span class="tdate">Nov 2021 &#8212; Aug 2023 &nbsp;&#183;&nbsp; 1 yr 10 mos</span><span class="tco">Kyndryl &nbsp;&#183;&nbsp; Brno &nbsp;&#183;&nbsp; Remote</span></div>
+        <div class="trole">Senior Associate, Systems Administrator</div>
+        <div class="tdesc">Joined as part of IBM's managed infrastructure spin-off into Kyndryl. Maintained enterprise-scale systems administration across complex virtualisation estates and iDRAC-based server hardware, supporting global clients with high availability and operational continuity.</div>
+        <div class="tskills"><span class="tag">Virtualisation</span><span class="tag">iDRAC</span><span class="tag">Enterprise Infra</span><span class="tag">Remote Ops</span><span class="tag">High Availability</span></div>
+      </div>
+    </div>
+    <div class="titem">
+      <div class="tdot"><div class="tdoti"></div></div>
+      <div>
+        <div class="tmeta"><span class="tdate">Nov 2020 &#8212; Nov 2021 &nbsp;&#183;&nbsp; 1 yr 1 mo</span><span class="tco">IBM &nbsp;&#183;&nbsp; Brno &nbsp;&#183;&nbsp; Remote</span></div>
+        <div class="trole">System Administrator</div>
+        <div class="tdesc">Oversaw operation and upkeep of virtual and physical server estates. Resolved stability issues across VMware and Azure platforms, maintained SLAs for critical workloads, and managed IT incidents at scale through ServiceNow.</div>
+        <div class="tskills"><span class="tag">VMware</span><span class="tag">Azure</span><span class="tag">Physical Servers</span><span class="tag">ITIL</span><span class="tag">ServiceNow</span><span class="tag">SLA Management</span></div>
+      </div>
+    </div>
+    <div class="titem">
+      <div class="tdot"><div class="tdoti"></div></div>
+      <div>
+        <div class="tmeta"><span class="tdate">Jan 2020 &#8212; Nov 2020 &nbsp;&#183;&nbsp; 11 mos</span><span class="tco">IBM &nbsp;&#183;&nbsp; Brno &nbsp;&#183;&nbsp; Hybrid</span></div>
+        <div class="trole">Service Coordinator &#8212; Incident Manager</div>
+        <div class="tdesc">Directed end-to-end incident lifecycle &#8212; leading investigation bridges, driving cross-functional teams to workarounds and permanent resolutions, chairing post-incident reviews. Tracked metrics (response times, resolution rates), ran readiness drills, and maintained ITIL best-practice alignment.</div>
+        <div class="tskills"><span class="tag">ITIL</span><span class="tag">Incident Management</span><span class="tag">SLA Reporting</span><span class="tag">Process Improvement</span><span class="tag">Knowledge Mgmt</span></div>
+      </div>
+    </div>
+    <div class="titem">
+      <div class="tdot"><div class="tdoti"></div></div>
+      <div>
+        <div class="tmeta"><span class="tdate">Jun 2014 &#8212; Dec 2015 &nbsp;&#183;&nbsp; 1 yr 7 mos</span><span class="tco">Burblebit &nbsp;&#183;&nbsp; Kathmandu &nbsp;&#183;&nbsp; Full-time</span></div>
+        <div class="trole">Web Developer</div>
+        <div class="tdesc">Designed and built website layouts and UIs using HTML, CSS, and JavaScript. Collaborated with designers to translate visual intent into production code. Optimised sites for SEO and social media. Worked with PostgreSQL and MySQL backends.</div>
+        <div class="tskills"><span class="tag">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">SEO</span></div>
+      </div>
+    </div>
+    <div class="titem">
+      <div class="tdot"><div class="tdoti"></div></div>
+      <div>
+        <div class="tmeta"><span class="tdate">May 2013 &#8212; Sep 2014 &nbsp;&#183;&nbsp; 1 yr 5 mos</span><span class="tco">CloudFactory &nbsp;&#183;&nbsp; Nepal &nbsp;&#183;&nbsp; Part-time</span></div>
+        <div class="trole">Data Entry Operator</div>
+        <div class="tdesc">Led a team of five operators managing workload and QA. Transcribed financial reports and text images, performed OCR, and analysed product data. Contributed to monthly CSR and volunteering initiatives.</div>
+        <div class="tskills"><span class="tag">Team Leadership</span><span class="tag">Data Entry</span><span class="tag">OCR</span><span class="tag">Data Analysis</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="fu">
+    <div class="slabel">04 / Certifications</div>
+    <h2 class="shead">Credentials &amp;<br>qualifications</h2>
+  </div>
+  <div class="cgrid fu">
+    <div class="ccard"><div class="cbadge">Red Hat &nbsp;&#183;&nbsp; Nov 2024</div><div class="cname">Red Hat System Administration I (RH124) &#8212; Ver. 9.3</div><div class="corg">Red Hat</div></div>
+    <div class="ccard"><div class="cbadge">VMware &nbsp;&#183;&nbsp; Oct 2022</div><div class="cname">VMware vSphere: Troubleshooting [V7]</div><div class="corg">VMware Learning &nbsp;&#183;&nbsp; 40 hrs</div></div>
+    <div class="ccard"><div class="cbadge">Microsoft &nbsp;&#183;&nbsp; Sep 2022</div><div class="cname">Microsoft Certified: Azure Fundamentals (AZ-900)</div><div class="corg">Microsoft</div></div>
+    <div class="ccard"><div class="cbadge">freeCodeCamp &nbsp;&#183;&nbsp; Oct 2021</div><div class="cname">Responsive Web Design Developer Certification</div><div class="corg">freeCodeCamp &nbsp;&#183;&nbsp; ~300 hrs</div></div>
+    <div class="ccard"><div class="cbadge">VMware &nbsp;&#183;&nbsp; Jun 2021</div><div class="cname">VMware vSphere: Install, Configure, Manage [V7]</div><div class="corg">VMware Learning</div></div>
+    <div class="ccard"><div class="cbadge">Google / Coursera &nbsp;&#183;&nbsp; Jul 2020</div><div class="cname">Google IT Support Certificate</div><div class="corg">Coursera</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="fu">
+    <div class="slabel">05 / Contact</div>
+    <h2 class="shead">Let's work<br>together</h2>
+  </div>
+  <div class="cinner fu">
+    <div>
+      <div class="ctxt">Whether you need an experienced Server Administrator, want to discuss a complex infrastructure challenge, or are looking to collaborate &#8212; I'm always open to a good conversation.</div>
+      <div class="avail"><span class="adot"></span><span class="atxt">Open to new opportunities</span></div>
+    </div>
+    <div class="clinks" id="clinks"></div>
+  </div>
+</section>
+
+<footer>
+  <span class="fcopy">&#169; 2026 Sanjay Karki &#8212; Server Administrator, Brno</span>
+  <div class="flinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<button class="btt" id="btt" aria-label="Back to top">&#8593;</button>
+
+<script src="script.js"></script>
+</body>
 </html>
