@@ -87,7 +87,7 @@ section{padding:6rem 4rem;border-top:1px solid var(--border)}
 .slbl{font-family:var(--fm);font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
 
 /* ── SKILLS ── */
-.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:var(--border);border:1px solid var(--border)}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
 .sblk{background:var(--bg);padding:1.75rem 2rem;transition:background .2s,border-color .2s;cursor:default}
 .sblk:hover{background:var(--bg2)}
 .sblk:hover .snm{color:var(--accent)}
@@ -178,6 +178,8 @@ footer{padding:2rem 4rem;border-top:1px solid var(--border);display:flex;align-i
   .astats{margin-top:0}
   footer{padding:1.5rem;flex-direction:column;text-align:center}
   .btt{bottom:1.5rem;right:1.5rem}
+  .sgrid{grid-template-columns:repeat(2,1fr)}
+  .cgrid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:480px){
   .hname{font-size:clamp(46px,14vw,68px)}
