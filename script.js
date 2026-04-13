@@ -34,8 +34,8 @@
     {t:'out',v:'}'},
     {t:'gap'},
     {t:'prompt',v:'&#8594; '},
-    {t:'cmd',v:'uptime --pretty'},
-    {t:'out',v:'<span style="color:#7ae8b4">up 11 years, 0 incidents unresolved</span>'}
+    {t:'cmd',v:'uptime -p'},
+    {t:'out',v:'<span style="color:#7ae8b4">up 11 years</span>'}
   ];
   var tb=document.getElementById('termBody');
   if(!tb) return;
