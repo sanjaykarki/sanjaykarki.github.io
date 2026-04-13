@@ -1,7 +1,7 @@
 (function(){
   /* ── Contact links rendered via JS to prevent CF obfuscation ── */
   var links=[
-    {icon:'@', label:'Email', val:'sanjay' + '@' + 'sanjaykarki.com.np', href:'mai'+'lto:'+'sanjay'+'@'+'sanjaykarki.com.np'},
+    {icon:'@', label:'Email', val:'\u0068\u0065\u006c\u006c\u006f\u0040\u0073\u0061\u006e\u006a\u0061\u0079\u006b\u0061\u0072\u006b\u0069\u002e\u0063\u006f\u006d\u002e\u006e\u0070', href:"javascript:location='mailto:\u0068\u0065\u006c\u006c\u006f\u0040\u0073\u0061\u006e\u006a\u0061\u0079\u006b\u0061\u0072\u006b\u0069\u002e\u0063\u006f\u006d\u002e\u006e\u0070';void 0"},
     {icon:'&#8734;', label:'Website', val:'sanjaykarki.com.np', href:'https://sanjaykarki.com.np'},
     {icon:'in', label:'LinkedIn', val:'linkedin.com/in/sanjay-karki', href:'https://www.linkedin.com/in/sanjay-karki'},
     {icon:'&lt;/&gt;', label:'GitHub', val:'github.com/sanjaykarki', href:'https://github.com/sanjaykarki'}
