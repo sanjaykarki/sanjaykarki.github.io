@@ -18,8 +18,8 @@ A dark-themed, single-page portfolio webiste. Designed for performance and reada
 - **Smooth scroll** navigation with active section tracking
 - **Scroll progress bar** along the top of the viewport
 - **Fade-up animations** powered by IntersectionObserver
-- **Fully responsive** — mobile-first layout with a hamburger menu
-- **Email obfuscation** — contact address rendered via unicode escape sequences to deter scrapers
+- **Fully responsive** - mobile-first layout with a hamburger menu
+- **Email obfuscation** - contact address rendered via unicode escape sequences to deter scrapers
 - **Back-to-top button** that appears on scroll
 - Google Fonts loaded via `preconnect` for performance
 
@@ -89,7 +89,7 @@ To deploy your own fork:
 
 1. Go to **Settings → Pages** in your GitHub repository
 2. Set source to `Deploy from a branch` → `main` → `/ (root)`
-3. Save — GitHub will publish the site and provide a `*.github.io` URL
+3. Save - GitHub will publish the site and provide a `*.github.io` URL
 
 For a custom domain, add a `CNAME` file to the root with your domain name, then configure your DNS with the appropriate `A` or `CNAME` records as per [GitHub's documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
 
