@@ -107,4 +107,4 @@ This project is personal and not intended as a template. Feel free to draw inspi
 
 ---
 
-*Built with care — no frameworks were harmed in the making of this site.*
+*Built with care - no frameworks were harmed in the making of this site.*
