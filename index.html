@@ -3,58 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sanjay Karki - Server Administrator</title>
-<meta name="description" content="Sanjay Karki - Server Administrator at Heidelberg Materials Digital Hub, Brno. VMware, Linux, Azure, 11+ years IT.">
-<meta property="og:title" content="Sanjay Karki - Server Administrator">
-<meta property="og:description" content="Infrastructure specialist. VMware, Linux, Azure, ITIL, 11+ years in IT.">
-<meta property="og:type" content="website">
-<meta name="google-site-verification" content="Tav_AxT0lsUTQEfzSCsEjbf4wHjda5YPntHukIlUHQg" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230c0c0e'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='18' font-weight='bold' fill='%23e8c97a'>SK</text></svg>">
+<title>Sanjay Karki – Server Administrator</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0c0c0e;--bg2:#111114;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.14);--border3:rgba(255,255,255,0.22);
+  --text:#f0ede8;--muted:#8a8a96;--subtle:#5a5a66;
+  --accent:#e8c97a;--accent2:#7ab4e8;--green:#7ae8b4;--pink:#e87a9a;
+}
+html,body{height:100%}
+body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;line-height:1.6;overflow:hidden}
+.hero{height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:4rem;position:relative;overflow:hidden;gap:4rem}
+.hero-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hero-bg-orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.12}
+.orb1{width:500px;height:500px;background:var(--accent);top:-10%;right:-5%}
+.orb2{width:300px;height:300px;background:var(--accent2);bottom:10%;left:-5%}
+.orb3{width:200px;height:200px;background:var(--pink);top:40%;right:20%}
+.hero-left{position:relative;z-index:1}
+.eyebrow{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);letter-spacing:.22em;text-transform:uppercase;margin-bottom:1.5rem;display:flex;align-items:center;gap:.75rem}
+.eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--accent)}
+.hname{font-size:clamp(54px,7.5vw,100px);font-weight:800;line-height:.93;letter-spacing:-.03em;margin-bottom:1.35rem}
+.hname em{font-style:normal;color:transparent;-webkit-text-stroke:1.5px var(--accent);display:block}
+.htagline{font-family:'Lora',serif;font-size:clamp(15px,1.6vw,17px);color:var(--muted);font-style:italic;line-height:1.8;max-width:440px;margin-bottom:2.5rem}
+.hactions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
+.btn1{padding:.8rem 1.8rem;background:var(--accent);color:var(--bg);font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.1em;text-decoration:none;transition:all .22s;display:inline-flex;align-items:center;gap:.5rem}
+.btn1:hover{opacity:.88;transform:translateY(-2px)}
+.btn2{padding:.8rem 1.8rem;border:1px solid var(--border3);color:var(--muted);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-decoration:none;transition:all .22s;display:inline-flex;align-items:center;gap:.5rem}
+.btn2:hover{border-color:var(--text);color:var(--text)}
+.hpills{display:flex;flex-wrap:wrap;gap:.5rem}
+.hpill{font-family:'DM Mono',monospace;font-size:10px;padding:.28rem .7rem;background:rgba(232,201,122,.08);color:var(--accent);border:1px solid rgba(232,201,122,.18);letter-spacing:.06em}
+.hero-right{display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
+.term{background:rgba(17,17,20,.95);border:1px solid var(--border2);width:100%;max-width:440px;font-family:'DM Mono',monospace;font-size:13px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.04),0 24px 64px rgba(0,0,0,.6)}
+.tbar{padding:.65rem 1rem;background:var(--bg2);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem}
+.dot{width:10px;height:10px;border-radius:50%}
+.dr{background:#ff6058}.dy{background:#ffbd2e}.dg{background:#29cc41}
+.ttitle{margin:0 auto;font-size:11px;color:var(--subtle);letter-spacing:.04em}
+.tbody{padding:1.25rem 1.5rem;line-height:2.1}
+.tp{color:var(--green)}.tc{color:var(--text)}.tk{color:var(--accent)}.tv{color:var(--accent2)}.ts{color:var(--pink)}
+.cur{display:inline-block;width:8px;height:14px;background:var(--green);vertical-align:middle;animation:blink 1.1s step-end infinite}
+@keyframes blink{50%{opacity:0}}
+</style>
 </head>
 <body>
-
-<div class="prog" id="prog"></div>
-
-<nav>
-  <a href="#" class="nlogo"><span class="nlogo-dot"></span>SK.sys</a>
-  <ul class="nlinks">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="#contact" class="ncta">Get in touch</a>
-  <button class="hbg" id="hbg" aria-label="Open menu"><span></span><span></span><span></span></button>
-</nav>
-
-<div class="mmenu" id="mm" role="dialog" aria-modal="true">
-  <button class="mclose" id="mclose" aria-label="Close menu">&#x2715;</button>
-  <a href="#about" class="mlink">About</a>
-  <a href="#skills" class="mlink">Skills</a>
-  <a href="#experience" class="mlink">Experience</a>
-  <a href="#certifications" class="mlink">Certifications</a>
-  <a href="#contact" class="mlink">Contact</a>
-</div>
-
-<!-- HERO -->
-<section class="hero" style="border-top:none" id="hero">
+<section class="hero">
   <div class="hero-bg">
     <div class="hero-bg-orb orb1"></div>
     <div class="hero-bg-orb orb2"></div>
     <div class="hero-bg-orb orb3"></div>
   </div>
-  <div style="position:relative;z-index:1">
-    <div class="heyebrow">Server Administrator</div>
-    <h1 class="hname">Sanjay<br><em>Karki</em></h1>
-    <p class="htagline">Infrastructure specialist at Heidelberg Materials - building, operating, and supporting VMware, Windows, Linux, &amp; Azure environments at enterprise scale from Brno, Czechia.</p>
+  <div class="hero-left">
+    <div class="eyebrow">Server Administrator</div>
+    <h1 class="hname">Sanjay<em>Karki</em></h1>
+    <p class="htagline">Infrastructure specialist at Heidelberg Materials – building, operating, and supporting VMware, Windows, Linux, &amp; Azure environments at enterprise scale from Brno, Czechia.</p>
     <div class="hactions">
-      <a href="#experience" class="btn1">&#8594;&nbsp; View Experience</a>
-      <a href="#contact" class="btn2">&#8594;&nbsp; Contact Me</a>
+      <a href="https://www.linkedin.com/in/karkisanjay/" class="btn1">&#8594;&nbsp; Connect with me</a>
+      <!-- <a href="#" class="btn2">&#8594;&nbsp; Contact Me</a> -->
     </div>
     <div class="hpills">
       <span class="hpill">VMware</span>
@@ -66,170 +73,53 @@
       <span class="hpill">QNAP</span>
     </div>
   </div>
-  <div class="hvisual">
+  <div class="hero-right">
     <div class="term">
       <div class="tbar">
-        <div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div>
+        <div class="dot dr"></div>
+        <div class="dot dy"></div>
+        <div class="dot dg"></div>
         <span class="ttitle">sanjay@sysops ~ bash</span>
       </div>
       <div class="tbody" id="termBody"></div>
     </div>
   </div>
-  <div class="shint"><span>Scroll</span><div class="sarr"></div></div>
 </section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="fu">
-    <div class="slabel">01 / About</div>
-    <h2 class="shead">The person<br>behind the uptime</h2>
-  </div>
-  <div class="agrid">
-    <div class="fu">
-      <div class="abody">
-        <p>I'm Sanjay Karki, a Server Administrator at Heidelberg Materials Digital Hub in Brno, Czechia. With a career spanning IBM, Kyndryl, and beyond, I've built deep expertise in VMware ESXi, Windows Server, and Linux infrastructure, from bare-metal deployments to full cloud migrations on Microsoft Azure.</p>
-        <p>Earlier at IBM, I served as an Incident Manager, leading cross-functional teams through critical incidents, championing process improvement, and building the response-readiness culture that keeps enterprise systems recoverable and resilient.</p>
-        <p>I started out as a Web Developer in Kathmandu, which gives me a full-stack perspective on every infrastructure challenge. I remain genuinely passionate about programming, science, and technology in their broadest spectrum.</p>
-      </div>
-    </div>
-    <div class="fu">
-      <div class="astats">
-        <div class="sc"><div class="snum">11+</div><div class="slbl">Years in IT</div></div>
-        <div class="sc"><div class="snum">4</div><div class="slbl">Companies</div></div>
-        <div class="sc"><div class="snum">IBM</div><div class="slbl">Alumni</div></div>
-        <div class="sc"><div class="snum">Brno</div><div class="slbl">Czechia</div></div>
-        <div class="sc" style="grid-column:span 2"><div class="snum" style="font-size:20px">Heidelberg Materials</div><div class="slbl">Current Employer</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="fu">
-    <div class="slabel">02 / Skills</div>
-    <h2 class="shead">Technical toolkit</h2>
-  </div>
-  <div class="sgrid fu">
-    <div class="sblk"><span class="sico">&#9881;&#65039;</span><div class="snm">Virtualisation</div><div class="stags"><span class="tag">VMware ESXi</span><span class="tag">vSphere</span><span class="tag">vCenter</span><span class="tag">vSAN</span><span class="tag">NSX</span><span class="tag">Hyper-V</span><span class="tag">iDRAC</span></div></div>
-    <div class="sblk"><span class="sico">&#128421;&#65039;</span><div class="snm">Windows Server</div><div class="stags"><span class="tag">Active Directory</span><span class="tag">DNS / DHCP</span><span class="tag">IIS</span><span class="tag">Group Policy</span><span class="tag">WSUS</span><span class="tag">SCCM</span></div></div>
-    <div class="sblk"><span class="sico">&#128039;</span><div class="snm">Linux / Unix</div><div class="stags"><span class="tag">RHEL</span><span class="tag">Ubuntu</span><span class="tag">CentOS</span><span class="tag">Bash Scripting</span><span class="tag">SSH</span></div></div>
-    <div class="sblk"><span class="sico">&#128190;</span><div class="snm">Storage &amp; Hardware</div><div class="stags"><span class="tag">NetApp</span><span class="tag">QNAP</span><span class="tag">NAS / SAN</span><span class="tag">RAID</span><span class="tag">Server Build</span></div></div>
-    <div class="sblk"><span class="sico">&#9729;&#65039;</span><div class="snm">Cloud &amp; Automation</div><div class="stags"><span class="tag">Microsoft Azure</span><span class="tag">Cloud Migration</span><span class="tag">PowerShell</span><span class="tag">Python</span><span class="tag">Terraform</span></div></div>
-    <div class="sblk"><span class="sico">&#128737;&#65039;</span><div class="snm">Security &amp; Monitoring</div><div class="stags"><span class="tag">Vulnerability Mgmt</span><span class="tag">Patch Management</span><span class="tag">Backup &amp; DR</span><span class="tag">SIEM</span></div></div>
-    <div class="sblk"><span class="sico">&#128293;</span><div class="snm">Incident Management</div><div class="stags"><span class="tag">ITIL Framework</span><span class="tag">RCA</span><span class="tag">SLA Management</span><span class="tag">ServiceNow</span><span class="tag">Change Mgmt</span></div></div>
-    <div class="sblk"><span class="sico">&#128187;</span><div class="snm">Web Development</div><div class="stags"><span class="tag">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span></div></div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="fu">
-    <div class="slabel">03 / Experience</div>
-    <h2 class="shead">Where I've<br>built and run systems</h2>
-  </div>
-  <div class="tline fu">
-    <div class="titem">
-      <div class="tdot"><div class="tdoti"></div></div>
-      <div>
-        <div class="tmeta"><span class="tdate">Aug 2023 &#8212; Present &nbsp;&#183;&nbsp;</span><span class="tco">Heidelberg Materials &nbsp;&#183;&nbsp; Brno &nbsp;&#183;&nbsp; Czechia </span></div>
-        <div class="trole">Server Administrator / Application Hosting Specialist</div>
-        <div class="tdesc">Leading hardware deployment and virtualisation initiatives &#8212; configuring VMware ESXi and NetApp/QNAP storage, building Windows Server and Linux (RHEL/Ubuntu) environments from scratch. Primary infrastructure contact: handling customer requests, managing ticket queues, driving OS optimisation, incident resolution, and change management.</div>
-        <div class="tach"><div class="tachl">Key Achievements</div><p>Orchestrated a full VMware ESXi upgrade from v7 to v8 across the datacenter and all remote sites. Led migration of on-premises workloads to Microsoft Azure, reducing infrastructure overhead and improving scalability.</p></div>
-        <div class="tskills"><span class="tag">VMware ESXi v8</span><span class="tag">NetApp / QNAP</span><span class="tag">Windows Server</span><span class="tag">RHEL / Ubuntu</span><span class="tag">Microsoft Azure</span><span class="tag">Cloud Migration</span></div>
-      </div>
-    </div>
-    <div class="titem">
-      <div class="tdot"><div class="tdoti"></div></div>
-      <div>
-        <div class="tmeta"><span class="tdate">Nov 2021 &#8212; Aug 2023 &nbsp;&#183;&nbsp;</span><span class="tco">Kyndryl &nbsp;&#183;&nbsp; Brno &nbsp;&#183;&nbsp; Czechia </span></div>
-        <div class="trole">Senior Associate, Systems Administrator</div>
-        <div class="tdesc">Joined as part of IBM's managed infrastructure spin-off into Kyndryl. Maintained enterprise-scale systems administration across complex virtualisation estates and iDRAC-based server hardware, supporting global clients with high availability and operational continuity.</div>
-        <div class="tskills"><span class="tag">Virtualisation</span><span class="tag">iDRAC</span><span class="tag">Enterprise Infra</span><span class="tag">Remote Ops</span><span class="tag">High Availability</span></div>
-      </div>
-    </div>
-    <div class="titem">
-      <div class="tdot"><div class="tdoti"></div></div>
-      <div>
-        <div class="tmeta"><span class="tdate">Nov 2020 &#8212; Nov 2021 &nbsp;&#183;&nbsp;</span><span class="tco">IBM &nbsp;&#183;&nbsp; Brno &nbsp;&#183;&nbsp; Czechia </span></div>
-        <div class="trole">System Administrator</div>
-        <div class="tdesc">Oversaw operation and upkeep of virtual and physical server estates. Resolved stability issues across VMware and Azure platforms, maintained SLAs for critical workloads, and managed IT incidents at scale through ServiceNow.</div>
-        <div class="tskills"><span class="tag">VMware</span><span class="tag">Azure</span><span class="tag">Physical Servers</span><span class="tag">ITIL</span><span class="tag">ServiceNow</span><span class="tag">SLA Management</span></div>
-      </div>
-    </div>
-    <div class="titem">
-      <div class="tdot"><div class="tdoti"></div></div>
-      <div>
-        <div class="tmeta"><span class="tdate">Jan 2020 &#8212; Nov 2020 &nbsp;&#183;&nbsp;</span><span class="tco">IBM &nbsp;&#183;&nbsp; Brno &nbsp;&#183;&nbsp; Czechia </span></div>
-        <div class="trole">Service Coordinator &#8212; Incident Manager</div>
-        <div class="tdesc">Directed end-to-end incident lifecycle &#8212; leading investigation bridges, driving cross-functional teams to workarounds and permanent resolutions, chairing post-incident reviews. Tracked metrics (response times, resolution rates), ran readiness drills, and maintained ITIL best-practice alignment.</div>
-        <div class="tskills"><span class="tag">ITIL</span><span class="tag">Incident Management</span><span class="tag">SLA Reporting</span><span class="tag">Process Improvement</span><span class="tag">Knowledge Mgmt</span></div>
-      </div>
-    </div>
-    <div class="titem">
-      <div class="tdot"><div class="tdoti"></div></div>
-      <div>
-        <div class="tmeta"><span class="tdate">Jun 2014 &#8212; Dec 2015 &nbsp;&#183;&nbsp;</span><span class="tco">Burblebit &nbsp;&#183;&nbsp; Kathmandu &nbsp;&#183;&nbsp; Nepal </span></div>
-        <div class="trole">Web Developer</div>
-        <div class="tdesc">Designed and built website layouts and UIs using HTML, CSS, and JavaScript. Collaborated with designers to translate visual intent into production code. Optimised sites for SEO and social media. Worked with PostgreSQL and MySQL backends.</div>
-        <div class="tskills"><span class="tag">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">SEO</span></div>
-      </div>
-    </div>
-    <div class="titem">
-      <div class="tdot"><div class="tdoti"></div></div>
-      <div>
-        <div class="tmeta"><span class="tdate">May 2013 &#8212; Sep 2014 &nbsp;&#183;&nbsp;</span><span class="tco">CloudFactory &nbsp;&#183;&nbsp; Kathmandu &nbsp;&#183;&nbsp; Nepal </span></div>
-        <div class="trole">Data Entry Operator</div>
-        <div class="tdesc">Led a team of five operators managing workload and QA. Transcribed financial reports and text images, performed OCR, and analysed product data. Contributed to monthly CSR and volunteering initiatives.</div>
-        <div class="tskills"><span class="tag">Team Leadership</span><span class="tag">Data Entry</span><span class="tag">OCR</span><span class="tag">Data Analysis</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="fu">
-    <div class="slabel">04 / Certifications</div>
-    <h2 class="shead">Credentials &amp;<br>Qualifications</h2>
-  </div>
-  <div class="cgrid fu">
-    <div class="ccard"><div class="cbadge">Red Hat &nbsp;&#183;&nbsp; Nov 2024</div><div class="cname">Red Hat System Administration I (RH124) &#8212; Ver. 9.3</div><div class="corg">Red Hat &nbsp;&#183;&nbsp; 40 hrs</div></div>
-    <div class="ccard"><div class="cbadge">VMware &nbsp;&#183;&nbsp; Oct 2022</div><div class="cname">VMware vSphere: Troubleshooting [V7]</div><div class="corg">VMware Learning &nbsp;&#183;&nbsp; 40 hrs</div></div>
-    <div class="ccard"><div class="cbadge">Microsoft &nbsp;&#183;&nbsp; Sep 2022</div><div class="cname">Microsoft Certified: Azure Fundamentals (AZ-900)</div><div class="corg">Microsoft</div></div>
-    <div class="ccard"><div class="cbadge">freeCodeCamp &nbsp;&#183;&nbsp; Oct 2021</div><div class="cname">Responsive Web Design Developer Certification</div><div class="corg">freeCodeCamp &nbsp;&#183;&nbsp; ~300 hrs</div></div>
-    <div class="ccard"><div class="cbadge">VMware &nbsp;&#183;&nbsp; Jun 2021</div><div class="cname">VMware vSphere: Install, Configure, Manage [V7]</div><div class="corg">VMware Learning &nbsp;&#183;&nbsp; 40 hrs</div></div>
-    <div class="ccard"><div class="cbadge">Google / Coursera &nbsp;&#183;&nbsp; Jul 2020</div><div class="cname">Google IT Support Certificate</div><div class="corg">Coursera</div></div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="fu">
-    <div class="slabel">05 / Contact</div>
-    <h2 class="shead">Let's work<br>together</h2>
-  </div>
-  <div class="cinner fu">
-    <div>
-      <div class="ctxt">Whether you need an experienced Server Administrator, want to discuss a complex infrastructure challenge, or are looking to collaborate. I'm always open to a good conversation.</div>
-      <div class="avail"><span class="adot"></span><span class="atxt">Open to new opportunities</span></div>
-    </div>
-    <div class="clinks" id="clinks"></div>
-  </div>
-</section>
-
-<footer>
-  <span class="fcopy">&#169; 2026 Sanjay Karki </span>
-  <div class="flinks">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </div>
-</footer>
-
-<button class="btt" id="btt" aria-label="Back to top">&#8593;</button>
-
-<script src="script.js"></script>
+<script>
+(function(){
+  var lines=[
+    {t:'prompt',v:'&#8594; '},{t:'cmd',v:'whoami'},
+    {t:'out',v:'sanjay_karki'},{t:'gap'},
+    {t:'prompt',v:'&#8594; '},{t:'cmd',v:'cat profile.json'},
+    {t:'out',v:'{'},
+    {t:'kv',k:'"role"',v:'"Server Administrator"',c:true},
+    {t:'kv',k:'"employer"',v:'"Heidelberg Materials"',c:true},
+    {t:'kv',k:'"location"',v:'"Brno, Czechia"',c:true},
+    {t:'kv',k:'"exp_years"',v:'11',isnum:true,c:true},
+    {t:'kv',k:'"open_to_work"',v:'true',isnum:true},
+    {t:'out',v:'}'},{t:'gap'},
+    {t:'prompt',v:'&#8594; '},{t:'cmd',v:'uptime -p'},
+    {t:'out',v:'<span style="color:#7ae8b4">up 11 years</span>'}
+  ];
+  var tb=document.getElementById('termBody');
+  if(!tb) return;
+  var cursor='<span class="cur"></span>';
+  var rendered='';
+  function renderLines(idx){
+    if(idx>=lines.length){tb.innerHTML=rendered+'\n<div><span class="tp">&#8594;</span> '+cursor+'</div>';return;}
+    var l=lines[idx];
+    if(l.t==='prompt'){rendered+='<div><span class="tp">'+l.v+'</span>';return renderLines(idx+1);}
+    if(l.t==='cmd'){rendered+='<span class="tc">'+l.v+'</span></div>';tb.innerHTML=rendered+cursor;}
+    else if(l.t==='out'){rendered+='<div style="margin-left:1rem;color:#c8c4bd">'+l.v+'</div>';}
+    else if(l.t==='kv'){
+      var val=l.isnum?'<span class="tv">'+l.v+'</span>':'<span class="ts">'+l.v+'</span>';
+      rendered+='<div style="margin-left:2rem"><span class="tk">'+l.k+'</span>: '+val+(l.c?',':'')+'</div>';
+    }else if(l.t==='gap'){rendered+='<div style="margin-top:.4rem"></div>';}
+    tb.innerHTML=rendered;
+    setTimeout(function(){renderLines(idx+1);},30);
+  }
+  setTimeout(function(){renderLines(0);},600);
+}());
+</script>
 </body>
 </html>
